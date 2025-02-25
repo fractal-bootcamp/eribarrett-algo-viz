@@ -6,15 +6,15 @@
 // repeat the process until all nodes are visited 
 
 type Graph = {
-    nodes: Node[];
+    nodes: Node[],
 }
 
 type Node = {
-    value: string;
-    neighbors: Node[];
+    value: string,
+    neighbors: Node[],
 }
 
-function depthFirstSearch(graph: Graph, startnode: Node) {
+export function depthFirstSearch(graph: Graph, startnode: Node) {
     const visited = new Set<Node>(); // keep track of visited nodes
     const stack = [startnode]; // inistialize stack with starting node
 
