@@ -5,7 +5,7 @@ type ArrayNeedsSort = number[];
 
 
 
-function bubbleSort(arr: ArrayNeedsSort): ArrayNeedsSort {
+export function bubbleSort(arr: ArrayNeedsSort): ArrayNeedsSort {
     const n = arr.length;
 
     for (let i = 0; i <= n - 1; i++) { // loop thru array, aka how many passes? 
